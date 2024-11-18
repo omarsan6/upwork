@@ -1,0 +1,81 @@
+:root{
+    --c-brand: #fac562;
+    --c-dark: #333;
+    --c-body: #666;
+    --f-base: "Plus Jakarta Sans", sans-serif;
+    --n-height: 100px;
+}
+
+*,*::after, *::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    color: var(--c-body);
+    font-family: var(--f-base);
+    line-height: 1.2;
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: var(--c-dark);
+    line-height: 1.2;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.heading-1{
+    font-size: clamp(32px, 6vw, 54px);
+}
+
+.heading-2{
+    font-size: clamp(28px, 4vw, 36px);
+}
+
+.heading-3{
+    font-size: 20px;
+}
+
+a{
+    color: var(--c-dark);
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+a:hover{
+    color: var(--c-brand);
+}
+
+section{
+    padding: 140px 0;
+}
+
+.container{
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    /* background-color: aquamarine; */
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.btn{
+    display: inline-block;
+    background-color: transparent;
+    border: 1px solid var(--c-brand);
+    font-family: var(--f-base);
+    padding: 14px 34px;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 14px;
+}
+
+.btn:hover{
+    background-color: var(--c-brand);
+    color: white;
+}
