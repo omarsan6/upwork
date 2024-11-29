@@ -96,6 +96,7 @@ section{
     position: fixed;
     width: 100%;
     display: flex;
+    z-index: 999;
 }
 
 .navbar .container{
@@ -156,3 +157,55 @@ section{
 .hamburger.active span:nth-child(2){
     transform: translateY(-5px) rotate(-45deg);
 }
+
+.scrolled{
+    background-color: var(--c-brand);
+}
+
+.scrolled .brand{
+    color: var(--c-dark);
+}
+
+.scrolled .nav-links li a{
+    color: var(--c-dark);
+}
+
+.scrolled .nav-links li a:hover{
+    color: var(--c-brand);
+}
+
+.scrolled .hamburger span{
+    background-color: var(--c-dark);
+}
+
+@media (max-width: 768px){
+
+    .nav-links{
+        position: fixed;
+        top: var(--n-height);
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        padding: 0px 24px;
+        transition: all 0.3s ease;
+        height: 0;
+        overflow: hidden;
+        justify-content: center;
+        background-color: rgb(245, 245, 245);
+    }
+
+    .nav-links.active{
+        height: 190px;
+    }
+
+    .nav-links li{
+        padding: 7px 0;
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+}
+
+
