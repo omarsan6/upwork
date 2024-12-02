@@ -2,6 +2,7 @@
     --c-brand: #fac562;
     --c-dark: #333;
     --c-body: #666;
+    --c-light: #f9f9f9;
     --f-base: "Plus Jakarta Sans", sans-serif;
     --n-height: 100px;
 }
@@ -19,7 +20,7 @@ html{
 body{
     color: var(--c-body);
     font-family: var(--f-base);
-    line-height: 1.2;
+    line-height: 1.8;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -178,7 +179,7 @@ section{
 }
 
 .scrolled .nav-links li a:hover{
-    color: var(--c-brand);
+    color: white;
 }
 
 .scrolled .hamburger span{
@@ -287,6 +288,57 @@ section{
         left: 20%;
     }
 }
+
+/* Services */
+.icon-svg{
+    width: 38px;
+    height: 38px;
+    color: var(--c-brand);
+}
+
+.section-intro{
+    margin-bottom: 44px;
+}
+
+.grid{
+    display: grid;
+    gap: 44px;
+}
+
+.three-col-grid{
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.service:nth-child(odd){
+    background-color: var(--c-dark);
+    color: rgb(191, 191, 191);
+}
+
+h3.active{
+    color: white;
+}
+
+.service{
+    padding: 44px;
+}
+
+.service p{
+    font-size: 14px;
+}
+
+@media (max-width:858px){
+    .three-col-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+@media (max-width:650px){
+    .three-col-grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+}
+
 
 
 
