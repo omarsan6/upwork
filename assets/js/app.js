@@ -15,3 +15,18 @@ hamburger.addEventListener('click', ()=>{
     navLinks.classList.toggle('active')
     hamburger.classList.toggle('active')
 })
+
+// Typed JS
+var typed = new Typed('#hero-titles', {
+    strings: [
+        'Creative Agency', 
+        'SEO',
+        'Marketing Digital',
+    ],
+    typeSpeed: 40,
+    loop:false,
+    loopCount: Infinity,
+    // startDelay: 50,
+    backSpeed:10,
+
+  });
