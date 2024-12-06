@@ -504,3 +504,42 @@ footer .container .social-icons {
         margin-top: 24px;
     }
 }
+
+/* Form mailchimp */
+
+form{
+    width: 100%;
+}
+
+.indicates-required{
+    width: 100%;
+    /* background-color: #fff; */
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media (max-width:768px){
+    .indicates-required{
+        justify-content: flex-start;
+        margin-bottom: 24px;
+    }
+}
+
+.mc-field-group{
+    margin-bottom: 24px;
+}
+
+.mc-field-group input{
+    display: block;
+    width: 100%;
+    padding: 16px 0;
+    border-radius: 0;
+    border: none;
+    font-family: var(--f-base);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    background-color: rgb(246, 246, 246);
+}
+
+.mc-field-group input:focus{
+    outline: none;
+}

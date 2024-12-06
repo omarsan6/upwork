@@ -3,7 +3,7 @@ const hamburger = document.querySelector('.hamburger')
 const navLinks = document.querySelector('.nav-links')
 const navLinksLi = document.querySelectorAll('.nav-links li')
 
-
+// Cuando el scroll baje determinada cantidad de pixeles cambia de color el navbar
 window.addEventListener('scroll', () => {
     if (this.scrollY >= 100) {
         navbar.classList.add('scrolled')
@@ -12,11 +12,13 @@ window.addEventListener('scroll', () => {
     }
 })
 
+// Activar el menu movil
 hamburger.addEventListener('click', () => {
     navLinks.classList.toggle('active')
     hamburger.classList.toggle('active')
 })
 
+// Mostrar en que parte del menu nos encontramos
 navLinksLi.forEach(li => li.addEventListener('click', () =>{
     navLinksLi.forEach(li => li.classList.remove('active'))
     li.classList.add('active')
@@ -40,7 +42,6 @@ var typed = new Typed('#hero-titles', {
     backSpeed: 10,
 
 });
-
 
 // AOS
 AOS.init();
